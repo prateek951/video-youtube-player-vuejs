@@ -1,8 +1,9 @@
 <template>
-    <div>
+    <div class="jumbotron">
         <input type="text" placeholder="Search Video"
         @input="onInput"
-        v-model="video">
+        v-model="video"
+        class="form-control">
     </div>
 </template>
 
@@ -25,5 +26,12 @@ export default {
 
 
 <style scoped> 
+    input{
+        width: 75%;
+    }
+    div{
+        text-align:center;
+        margin-top: 20px;
+    }
     
 </style>
