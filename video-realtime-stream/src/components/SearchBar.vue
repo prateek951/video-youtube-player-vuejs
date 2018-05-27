@@ -1,9 +1,8 @@
 <template>
     <div>
-        <input type="text" 
-        placeholder="Search the video"
+        <input type="text" placeholder="Search Video"
         @input="onInput"
-        v-model="video"/>
+        v-model="video">
     </div>
 </template>
 
@@ -17,7 +16,7 @@ export default {
     },
     methods: {
         onInput(e){
-            console.log(e.target.value);
+            this.$emit('termChange',e.target.value)
         }
     }
 
